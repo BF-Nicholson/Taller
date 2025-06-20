@@ -1,0 +1,175 @@
+@font-face{
+   
+font-family: "Bebas Neue";
+src: url(Fuentes/Bebas_Neue/BebasNeue-Regular.ttf);
+
+}
+
+:root{
+    --fontSize1: 0.85rem;
+    --colorRojo:red;
+}
+
+*,
+::before ::after {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+
+body {
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    background-color: #D9D9D9;
+    border-bottom: solid 2px var(--colorRojo);
+    justify-content: space-between;
+}
+
+#logo {
+    padding-left: 45px;
+    margin: 15px 15px;
+    width: 200px;
+}
+
+.secciones,
+.navbar_menu {
+    display: flex;
+    list-style: none;
+}
+
+
+.secciones {
+    justify-content: space-between;
+    gap: 25px;
+
+}
+
+.secciones p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 10px 0px 0px 0px;
+    align-items: center;
+    color: black;
+    border-bottom: solid 3px gray;
+}
+
+.secciones:hover p{
+    border-bottom: solid 3px var(--colorRojo);
+    
+}
+
+.navbar_menu {
+    justify-content: space-between;
+    gap: 25px;
+    padding-right: 45px;
+    margin: 19px 0px 0px 0px;
+}
+
+ul li a {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+main{
+    padding:55px 50px 0px 50px;
+
+}
+
+
+.noticia_destacada{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px;
+    border: 0px;
+}
+
+
+.imagen_noticia_destacada img{
+ width:750px;
+}
+
+.row_destacado{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: left;
+gap: 10px;
+padding:5px 0px 5px 0px;
+}
+
+.separador_rojo{
+    width:5px;
+    height:22px;
+    background-color: var(--colorRojo);
+}
+
+
+.noticia_destacada h4{
+    font-family: "Bebas Neue";
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin: 12px 0px 8px 0px;
+}
+
+.texto h2{
+    font-family: "Bebas Neue";
+    font-size: 3.8rem;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.texto p{
+    margin: 0px;
+    padding: 0px 0px 15px 0px;
+}
+
+.autor span{
+    color: var(--colorRojo);
+    font-size: var(--fontSize1);
+}
+
+.autor{
+    font-size: var(--fontSize1);
+}
+
+.autor a, .boton_noticia_destacada a{
+    text-decoration: none;
+}
+.boton_noticia_destacada{
+    background-color:var(--colorRojo);
+    width:200px;
+    height:46px;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+
+.boton_noticia_destacada h4{
+    padding: 9px 0px 0px 0px;
+    font-size: 1.4rem;
+    color: white;
+    
+}
+
+#imperibles_de_la_semana{
+    padding-top: 40px;
+}
+
+#bg_texture, #bg_texture_2{
+
+    position: absolute;
+    }
