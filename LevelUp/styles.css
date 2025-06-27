@@ -1,13 +1,13 @@
-@font-face{
-   
-font-family: "Bebas Neue";
-src: url(Fuentes/Bebas_Neue/BebasNeue-Regular.ttf);
+@font-face {
+
+    font-family: "Bebas Neue";
+    src: url(Fuentes/Bebas_Neue/BebasNeue-Regular.ttf);
 
 }
 
-:root{
+:root {
     --fontSize1: 0.85rem;
-    --colorRojo:red;
+    --colorRojo: red;
 }
 
 *,
@@ -20,6 +20,7 @@ src: url(Fuentes/Bebas_Neue/BebasNeue-Regular.ttf);
 html {
     overflow-x: hidden;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+
 }
 
 body {
@@ -32,6 +33,8 @@ nav {
     background-color: #D9D9D9;
     border-bottom: solid 2px var(--colorRojo);
     justify-content: space-between;
+    position: fixed;
+
 }
 
 #logo {
@@ -62,9 +65,9 @@ nav {
     border-bottom: solid 3px gray;
 }
 
-.secciones:hover p{
+.secciones:hover p {
     border-bottom: solid 3px var(--colorRojo);
-    
+
 }
 
 .navbar_menu {
@@ -83,13 +86,18 @@ a {
     color: black;
 }
 
-main{
-    padding:55px 50px 0px 50px;
+
+
+/* FIN DEL NAV */
+
+
+main {
+    padding: 8.3% 50px 0px 50px;
 
 }
 
 
-.noticia_destacada{
+.noticia_destacada {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -98,121 +106,191 @@ main{
 }
 
 
-.imagen_noticia_destacada img{
- width:750px;
+.imagen_noticia_destacada img {
+    width: 750px;
 }
 
-.row_destacado{
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: left;
-gap: 10px;
-padding:5px 0px 5px 0px;
+.row_destacado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    padding: 5px 0px 5px 0px;
 }
 
-.separador_rojo{
-    width:5px;
-    height:22px;
+.separador_rojo {
+    width: 5px;
+    height: 22px;
     background-color: var(--colorRojo);
 }
 
 
-.noticia_destacada h4{
+.noticia_destacada h4 {
     font-family: "Bebas Neue";
     font-weight: 500;
     font-size: 1.8rem;
     margin: 12px 0px 8px 0px;
 }
 
-.texto h2{
+.texto h2 {
     font-family: "Bebas Neue";
     font-size: 3.8rem;
     font-weight: 500;
     margin: 0px;
 }
 
-.texto p{
+.texto p {
     margin: 0px;
     padding: 0px 0px 15px 0px;
 }
 
-.autor span{
+.autor span {
     color: var(--colorRojo);
     font-size: var(--fontSize1);
 }
 
-.autor{
+.autor {
     font-size: var(--fontSize1);
 }
 
-.autor a, .boton_noticia_destacada a{
+.autor a,
+.boton_noticia_destacada a {
     text-decoration: none;
 }
-.boton_noticia_destacada{
-    background-color:var(--colorRojo);
-    width:200px;
-    height:46px;
+
+.boton_noticia_destacada {
+    background-color: var(--colorRojo);
+    width: 200px;
+    height: 46px;
     text-align: center;
     border-radius: 5px;
-    
+
 }
 
-.boton_noticia_destacada h4{
+.boton_noticia_destacada h4 {
     padding: 9px 0px 0px 0px;
     font-size: 1.4rem;
     color: white;
-    
+
 }
 
-#imperibles_de_la_semana{
+/* Imperdibles y Carrousel */
+
+#imperibles_de_la_semana {
     padding-top: 40px;
 }
 
+.contenedor_carrousel {
+    width: 100%;
+}
 
-.tarjeta{
+.carrousel {
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+
+}
+
+.carrousel::-webkit-scrollbar {
+    display: none;
+}
+
+
+.carrousel_tarjeta {
+    scroll-snap-align: start;
+    cursor: pointer;
+}
+
+
+.carrousel_tarjeta h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+
+
+/* FEED */
+
+
+.tarjeta {
     display: flex;
     flex-direction: block;
     padding-block-end: 25px;
 }
 
-.tarjeta .contenedor_texto{
+.tarjeta .contenedor_texto {
     display: flex;
     flex-direction: column;
     width: 50%;
     padding-left: 35px;
 }
 
-.tarjeta .contenedor_texto p .reloj_icon{
+.tarjeta .contenedor_texto p .reloj_icon {
     width: 25px;
     margin-top: 0px;
-    
+
 }
 
-.tarjeta .contenedor_texto p .reloj_icon img{
+.tarjeta .contenedor_texto p .reloj_icon img {
     width: 25px;
     padding: 0px;
 }
 
-.tarjeta .contenedor_texto h4{
+.tarjeta .contenedor_texto h4 {
     width: 100%;
     font-size: 1.9rem;
     margin: 0px;
     font-style: normal;
     margin-top: 30px;
 }
-.tarjeta .contenedor_texto p{
+
+.tarjeta .contenedor_texto p {
     width: 100%;
     margin-top: 8px;
 }
-.tarjeta .contenedor_texto p:nth-of-type(2){
+
+.tarjeta .contenedor_texto p:nth-of-type(2) {
     width: 100%;
     margin: 0px 0px 15px 0px;
 }
 
+/* VIDEO seccion*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1, 5fr;
+    grid-template-rows: 300px 100px;
+    gap: 20px;
+
+}
+
+.h4_video{
+    color:white;
+}
+
+.item_video {
+    grid-column: 1/1;
+    grid-row: 1/2;
+
+}
 
 
-#bg_texture, #bg_texture_2{
 
+#bg_texture,
+#bg_texture_2 {
+    z-index: -1;
     position: absolute;
-    }
+
+}
+
+#bg_texture{
+    top: 3500px;
+    left:-400px;
+}
