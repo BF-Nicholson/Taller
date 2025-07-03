@@ -17,6 +17,12 @@
     font-weight: 300;
 }
 
+body p,
+body h2,
+body h3 {
+    margin: 0px;
+}
+
 :root {
     --fontSize1: 0.85rem;
     --colorRojo: red;
@@ -32,6 +38,14 @@
 html {
     overflow-x: hidden;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+
+}
+
+img,
+p,
+h2,
+h4 {
+    padding: 0px;
 
 }
 
@@ -99,7 +113,6 @@ a {
     color: black;
 }
 
-
 /* NAV FIN */
 
 
@@ -118,7 +131,7 @@ a {
     background-color: var(--colorRojo);
 }
 
-.indice{
+.indice {
     width: 500px;
     height: 22px;
     padding-bottom: 20px;
@@ -126,8 +139,72 @@ a {
     display: flex;
 }
 
-h4{
-    margin:0px 0px 0px 10px;
+h4 {
+    margin: 0px 0px 0px 10px;
 }
 
 
+/* Primera seccion */
+
+.hero {
+    display: flex;
+    width: 1000vw;
+    flex-direction: row;
+}
+
+
+.tarjetaTexto {
+    padding-top: 260px;
+    padding-left: 50px;
+}
+
+.hero p,
+.hero h3 {
+    color: white;
+}
+
+.hero h3 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    margin: 0px;
+    font-size: 1em;
+    margin-top: 20px;
+    color: #878787;
+}
+
+
+.imgBG {
+    position: absolute;
+    top: 89px;
+    margin: 0px;
+    z-index: -1;
+}
+
+.imgBG img {
+    height: 500px;
+}
+
+.tarjeta {
+    padding-top: 200px;
+    margin-left: 65px;
+}
+
+/* */
+
+.trucos {
+    padding-top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trucos p {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    margin: 0px 250px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
