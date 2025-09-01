@@ -1,0 +1,18 @@
+body{
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuerpo {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 7888px;
+    background: linear-gradient(#000113, #04C0FF);
+}
+
+.planetas{
+    
+    display: flex;
+    flex-direction: column-reverse;
+}
