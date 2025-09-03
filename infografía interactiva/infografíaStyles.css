@@ -1,18 +1,70 @@
-body{
+html{
     margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: 0px;
+    padding: 0px;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .cuerpo {
     display: flex;
     flex-direction: column-reverse;
     height: 7888px;
-    background: linear-gradient(#000113, #04C0FF);
+    background: linear-gradient(#000113 0%, #000113 75%, #04C0FF 90%, #04C0FF 100%);
 }
 
-.planetas{
-    
+.tierra {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.planetas {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 560px;
+}
+
+#montaña {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(200px, 100vw, 100vw);
+    color: white;
+    text-align: center;
+    
+}
+
+#plataforma{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(200px, 70%, 70%);
+    color: white;
+    text-align: center;
+
+}
+
+#nube:nth-child(1) {
+    width: clamp(650px, 850px, 950px);
+    padding-right: 80%;
+}
+
+#nube:nth-child(2) {
+    width: clamp(250px, 450px, 550px);
+    padding: 0% 0% 5% 80%;
+}
+
+#nube:nth-child(3) {
+    width: clamp(350px, 600px, 700px);
+    padding: 0% 40% 0% 0%;
 }
