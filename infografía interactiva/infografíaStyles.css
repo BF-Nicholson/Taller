@@ -12,10 +12,11 @@ body {
 }
 
 .cuerpo {
+    
     display: flex;
     flex-direction: column-reverse;
-    height: 7888px;
-    background: linear-gradient(#000113 0%, #000113 75%, #04C0FF 90%, #04C0FF 100%);
+    height: auto;
+    background: linear-gradient(#000113 0%, #000113 60%, #01AFD9 70%, #01AFD9 100%);
 }
 
 .tierra {
@@ -30,19 +31,19 @@ body {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    padding: 0px 0px 560px 0px;
+    margin: 0px 0px -50px 0px;
+    transform: translate(27%);
     max-width: 500px;
 }
 
 .planetas_agrupados {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
+    grid-template-columns: 3fr 1fr;
     gap: 40%;
 }
 
 
-#montaña {
+#background {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -65,56 +66,91 @@ body {
 }
 
 #nube:nth-child(1) {
-    width: clamp(650px, 850px, 950px);
-    padding-right: 80%;
+    width: clamp(350px, 450px, 550px);
+    margin-right: 70%;
 }
 
 #nube:nth-child(2) {
-    width: clamp(250px, 450px, 550px);
-    padding: 0% 0% 5% 80%;
+    width: clamp(250px, 350px, 450px);
+    margin: 0% 0% 5% 70%;
 }
 
 #nube:nth-child(3) {
-    width: clamp(350px, 600px, 700px);
-    padding: 0% 40% 0% 0%;
+    width: clamp(300px, 400px, 500px);
+    margin: 0% 30% 0% 0%;
 }
 
 #satelite {
     width: clamp(150px, 250px, 350px);
     justify-content: center;
-    padding-right: 75%;
+    margin-right: 75%;
     padding-bottom: 10rem;
 }
 
 #luna {
-    width: clamp(270px, 390px, 470px);
-    padding-left: 80%;
+    width: clamp(200px, 200px, 300px);
+    margin-left: 85%;
 
 }
 
 #saturnoChiquito {
-    padding-right: 40%;
-    width: 110px, 210px, 310px;
+    margin-right: 80%;
+    width: clamp(70px, 160px, 270px);
 }
 
 
 #planetaRojoChiqito {
-    grid-column: 4 / 5;
-    width: 30%;
+    grid-column: 3 / 4;
+    width: clamp(110px, 110px, 210px) ;
     object-fit: cover;
+    transform: translate(-50%);
 }
 
 #marte {
+    width: clamp(220px, 220px, 450px);
+    transform: translate(-60%);
     grid-column: 1 / 3;
     object-fit: cover;
 }
 
+#planetaRojo {
+    width: clamp(120px, 120px, 320px);
+}
+
+#jupiter {
+width: clamp(230px, 230px, 350px);
+transform: translate(30%);
+}
+
+#planetaNegro {
+    width: clamp(110px, 110px, 310px);
+}
+
+#saturno {
+    width: clamp(250px, 350px, 450px);
+    transform: translate(-67%);
+}
+
+#planetaRandom{
+    width: clamp(70px, 90px, 210px);
+}
+
+#crater{
+    width: clamp(110px, 110px, 210px);
+}
+
+#sol{
+    width: clamp(250px, 400px, 500px);
+    padding-left: 100%;
+}
+
+#black_hole{
+    width: clamp(350px, 850px, 950px);
+   transform: translate(0%, -55%);
+}
 /*
 .planetas_agrupados:nth-child(2){
 
 }
 */
 
-.limites {
-    max-width: 400px;
-}
