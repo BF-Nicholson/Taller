@@ -1,0 +1,120 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-sizing: border-box;
+}
+
+#jupiter{
+    position: fixed;
+    width: 100vw;
+    height: 100hw;
+}
+
+.cuerpo {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+#nave {
+    z-index: 0;
+    position: absolute;
+    bottom: 7%;
+    left: 20%;
+    transform: rotate(20deg);
+    width: clamp(100px, 250px, 350px);
+    object-fit: cover;
+}
+
+#cartel {
+    z-index: 0;
+    position: absolute;
+    bottom: 15%;
+    left: 10.5%;
+    width: clamp(100px, 250px, 350px);
+    object-fit: cover;
+}
+
+
+#elemento_1 {
+    z-index: 0;
+    position: absolute;
+    transform: translate(0, 10%);
+    left: 37%;
+    width: clamp(100px, 130px, 150px);
+    object-fit: cover;
+}
+
+
+#elemento_2 {
+    z-index: 0;
+    position: absolute;
+    bottom: 20%;
+    left: 80%;
+    width: clamp(100px, 130px, 150px);
+    object-fit: cover;
+}
+
+#elemento_3 {
+    z-index: 0;
+    position: absolute;
+    bottom: 17%;
+    left: 48%;
+    width: clamp(100px, 200px, 250px);
+    object-fit: cover;
+}
+
+#elemento_1 {
+    z-index: 1;
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+    width: clamp(100px, 130px, 150px);
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.modal-container{
+   transition: all 0.4s;
+   visibility: hidden;
+    opacity: 0;
+}
+
+.modal-container:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+   
+}
+
+#cartel_con_texto_1 {
+    width: clamp(150px, 580px, 650px);
+    object-fit: cover;
+    transform: translate(-5%, 50%);
+
+}
+
+#cartel_con_texto_2 {
+    width: clamp(150px, 580px, 650px);
+    object-fit: cover;
+    transform: translate(-5%, 50%);
+
+}
+
+#cartel_con_texto_3{
+    width: clamp(150px, 580px, 650px);
+    object-fit: cover;
+    transform: translate(-5%, 50%);
+}
