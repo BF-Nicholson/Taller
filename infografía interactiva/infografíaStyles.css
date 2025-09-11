@@ -73,6 +73,58 @@ body {
     z-index: 1;
     width: clamp(70px, 370px, 470px);
     bottom: 4.5%;
+    cursor: pointer;
+}
+
+#nave.animar {
+    animation-name: nave-volando;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes nave-volando {
+    0% {
+        transform: translate(0, 0);
+        transform: rotate(5deg);
+    }
+
+    3% {
+        transform: rotate(-3deg);
+    }
+
+    6% {
+        transform: rotate(2deg) translate(0, -15vw);
+    }
+
+    9% {
+        transform: rotate(0deg) translate(0, -25vw);
+    }
+
+    12% {
+        transform: rotate(0deg) translate(0, -50vw);
+    }
+
+    55% {
+        transform:rotate(0deg)  translate(0, -315vw);
+
+    }
+
+    60% {
+        transform: translate(5px, -320vw) rotate(5deg) scale(1);
+    }
+
+    65% {
+        transform: translate(20px, -325vw) rotate(15deg) scale(1);
+    }
+
+    100% {
+        transform: translate(100px, -330vw) rotate(120deg) scale(0.5);
+    }
 }
 
 #plataforma {
@@ -165,7 +217,7 @@ body {
 
 #planetaRandom {
     width: clamp(70px, 120px, 210px);
-    transform: translate( 105%, 55%);
+    transform: translate(105%, 55%);
     opacity: 0.7;
 
 }
@@ -179,16 +231,10 @@ body {
 
 #sol {
     width: clamp(250px, 550px, 550px);
-transform:translate(120%)
+    transform: translate(120%)
 }
 
 #black_hole {
     width: clamp(350px, 1950px, 14550px);
-transform: translate(0, -60%);
+    transform: translate(0, -60%);
 }
-
-/*
-.planetas_agrupados:nth-child(2){
-
-}
-*/
