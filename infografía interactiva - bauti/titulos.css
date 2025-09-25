@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src:
+        local("BebasNeue-Regular"), url("fuentes/BebasNeue-Regular.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src:
+        local("Montserrat-VariableFont_wght"), url("fuentes/Montserrat-VariableFont_wght.ttf");
+    font-weight: 200;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: url(img/gracias-por-ver/Fondo.png);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Bebas Neue';
+}
+
+h4 {
+    font-family: 'Montserrat';
+}
+
+.contenedor {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor h1,
+.texto-de-las-preguntas-wacho {
+    z-index: 1;
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+}
+
+
+.contenedor h4 {
+    z-index: 1;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+/* ARREGLAR ESA MIERDA */
+
+.boton {
+    background-color: #00053B;
+    border-radius: 16px;
+    width: 250px;
+    height: 130px;
+    border: 3px solid white;
+}
+
+.boton h2 {
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 18% 0 auto 0;
+}
+
+/* PAGINA DE PREGUNTAS 
+
+.texto-1{
+
+}
+
+.texto-2{
+
+}
+
+*/
+.texto-de-las-preguntas-wacho h1:nth-child(1) {
+    font-size: 3rem;
+}
+
+.texto-de-las-preguntas-wacho h1:nth-child(2) {
+    font-size: 3rem;
+}
+
+.equivocado-o-correcto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 45%;
+    width: 100%;
+    z-index: 1;
+}
+
+.equivocado img {
+    width: clamp(50px, 300px, 400px);
+    max-width: 300px;
+}
+
+.correcto img {
+    width: clamp(50px, 300px, 400px);
+    max-width: 300px;
+}
+
+.palitos-de-la-selva{
+    position: absolute;
+    z-index: 0;
+}
+
+.palito:nth-child(1){
+transform: translate(-223%, 170%) scaleX(-1);
+
+}
+
+.palito:nth-child(2){
+    transform: translate(222%, 70%);
+}
